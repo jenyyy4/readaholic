@@ -49,7 +49,7 @@ async function displayLibrary() {
     libraryDiv.innerHTML = '<p>Loading books...</p>'; // Show loading message
 
     if (library.length === 0) {
-        libraryDiv.innerHTML = "<p>No books in your library.</p>";
+        libraryDiv.innerHTML = `<p id="no-book">[no books in your library]</p>`;
         return;
     }
 
