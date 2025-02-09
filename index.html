@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendation & Library Organizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+</head>
+<body>
+    <div class="navbar rec-heading">
+        <div class="left">
+            <img src="logo.png">
+        </div>
+
+        <div class="middle">
+            <h1>READAHOLIC</h1>
+        </div>
+        
+        <div class="right">
+            <p onclick="scrollToLibrary()">Go to Library</p>
+        </div>
+    </div><br><br><br>
+
+    <div class="readaholic">
+        <h3>let me recommend books:</h3>
+        <input type="text" id="search" placeholder="Search for books...">
+        <button onclick="searchBooks()">Search</button>
+        <div id="results"></div><br><br><br><br><br>
+    </div>
+
+    <div class="separator"></div><br><br><br><br><br>
+
+    <div class="navbar library-heading">
+
+        <div class="lib-left">
+            <img src="library-logo.png">
+        </div>
+
+        <div class="lib-middle">
+            <h1>LIBRARY</h1>
+        </div>
+        
+        <div class="lib-right">
+            <p onclick="scrollToRec()">Go to Recommender</p>
+        </div>
+    </div><br><br><br>
+
+    <div class="library">
+        <h3>my collection:</h3>
+        <div id="library"></div>
+    </div>
+
+    <div id="popup" class="popup">
+        <img id="popupImage" src="" alt="Book Cover">
+        <h3 id="popupTitle"></h3>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

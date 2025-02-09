@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #ffaec8;
+    color: #333;
+}
+.navbar {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff758c;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.left img {
+    width: 100px;
+}
+.right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.right p {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family:'Times New Roman', Times, serif;
+    color: #ffe5ec;
+}
+.right p:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+.lib-left img {
+    width: 100px;
+}
+.lib-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.lib-right p {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family:'Times New Roman', Times, serif;
+    color: #ffe5ec;
+}
+.lib-right p:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+h1 {
+    font-family: "Bebas Neue";
+    font-size: 5rem;
+    text-align: center;
+    color: #000000;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    line-height: 0;
+    cursor: default;
+    transition: ease-out 1s;
+}
+h1:hover {
+    color: #393939;
+}
+h3 {
+    /* font-family: "Trirong", serif; */
+    text-align: center;
+    color: #ffe5ec;
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */
+}
+input, button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+input {
+    border: 2px solid #ff758c;
+    padding: 10px;
+}
+button {
+    background-color: #ff758c;
+    color: #fff0f3;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #e63950;
+}
+#results, #library {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+.book {
+    background: #ffe5ec;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    text-align: center;
+    transition: 0.3s;
+}
+.book img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.book:hover {
+    transform: scale(1.05);
+}
+.book h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.separator {
+    width: 100%;
+    border: 5px solid #ffe5ec;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    text-align: center;
+    border-radius: 10px;
+}
+.popup img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+.popup h3 {
+    margin-top: 10px;
+    color: #333;
+}
+.popup button {
+    margin-top: 10px;
+}
