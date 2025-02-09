@@ -158,3 +158,35 @@ button:hover {
     font-family:'Poppins';
     color: black;
 }
+
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .right, .lib-right {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    input, button {
+        width: 90%;
+    }
+    
+    .book {
+        width: 180px;
+    }
+    
+    .popup img {
+        width: 200px;
+    }
+}
